@@ -1,0 +1,323 @@
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-details-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+  
+.product-details-image {
+    margin-left: 150px;
+    margin-top: 120px;
+    margin-right: 300px;
+
+    position: relative;
+    width: 400px;
+    height: 480px; 
+    background-color: transparent; 
+    overflow: hidden; 
+}
+
+
+.product-details-description {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 55px;
+}
+  
+.product-name{
+    font-size: 40px;
+    margin-bottom: 17px;
+    margin-top: 55px;
+    font-weight: 600;
+    text-align: left;
+}
+  
+.product-price {
+    font-size: 28px;
+    margin-bottom: 95px;
+    text-align: left;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "SF Pro Display Semibold", Arial, sans-serif;
+}
+
+
+/* colors */
+
+.color-options {
+    display: flex;
+    justify-content: center;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    margin-top: 20px;
+    margin-bottom: -55px;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
+    overflow: hidden;
+}
+
+.color-option.selected {
+    border: 3px solid #5c7aff;
+    box-shadow: 0 0 0 0.5px #4769ff, 0 1px 5px rgba(226, 225, 225, 0.052) inset;
+}
+
+.color-option:hover {
+    opacity: 0.8;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+/* buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+.add-to-cart-button {
+    width: 250px;
+    height: 55px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    margin-top: 10px;
+    border-radius: 0;
+    font-size: 17px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-to-cart-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.close-button {
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    padding: 9px 15px;
+    margin-top: 10px;
+    border-radius: 0;
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.close-button:hover {
+    border: 2.5px solid rgb(19, 19, 19);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+
+/* characteristics */
+.characteristics {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    width: 68%;
+    font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.characteristics h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+  
+.characteristics h3 {
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+
+    margin-left: 3px;
+    margin-bottom: 25px;
+}
+
+.characteristics strong {
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+.characteristics .characteristic {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    display: flex;
+}
+  
+.characteristics .label {
+    flex: 0 0 auto;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 21px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  
+.characteristics .value {
+    flex: 1;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.characteristics .list-values{
+    margin-bottom: 8px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .product-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+      
+    .product-details-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+      
+    .product-details-image {
+        margin-top: 15px;
+        margin-left: 50px;
+        width: 300px;
+    }
+      
+    .product-details-description {
+        margin: 30px;
+        width: 400px;
+    }
+      
+    .product-name {
+        font-size: 32px;
+        margin-bottom: 5px;
+        margin-top: 0;
+        text-align: left;
+    }
+      
+    .product-price {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-align: left;
+    }
+      
+    .color-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+      
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+      
+    .characteristics {
+        margin: 30px;
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .product-price {
+          margin-bottom: 40px;
+        }
+      
+        .button-container {
+          align-items: center;
+          margin-top: 20px;
+        }
+      }
+      
+    .color-option {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+      
+    .add-to-cart-button {
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+      
+    .close-button {
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+      
+      
+    .characteristics h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+      
+    .characteristics h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+      
+    .characteristics strong {
+        font-size: 16px;
+    }
+      
+    .characteristics .label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+      
+    .characteristics .value {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+      
+    .characteristics .list-values {
+        margin-bottom: 5px;
+    }
+      
+}

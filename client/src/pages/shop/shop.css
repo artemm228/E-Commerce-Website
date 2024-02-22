@@ -1,0 +1,96 @@
+.shopTitle {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.product {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-link {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.product img {
+    width: 200px;
+    max-width: 100%; 
+    height: auto; 
+}
+
+.product .description {
+    text-align: center;
+    font-size: 25px;
+}
+
+.product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding: 9px 15px 9px 15px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {  /* Для устройств с шириной до 768 пикселей */
+    
+    .shopTitle h1{
+        font-size: 45px;
+    }
+
+    .product {
+        margin-top: -10px;
+        margin-bottom: 0;
+    }
+
+    .product img {
+        width: 150px;
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 480px) {  /* Для устройств с шириной до 480 пикселей */
+    .products {
+        grid-template-columns: 1fr;
+        gap: 10px; 
+    }
+
+    .product {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .addToCartBttn{
+        margin-top: 20px;
+    }
+}
